@@ -168,6 +168,22 @@ body.menu-open{
     display:block;
   }
 
+    /* Make header fixed on mobile and prevent page content from scrolling under it */
+    .header{
+        position:fixed;
+        top:0;
+        left:0;
+        right:0;
+        width:100%;
+        z-index:1200;
+        background:linear-gradient(135deg,#f4f8f4,#e7f1e8);
+    }
+
+    /* Add top padding so content doesn't sit under the fixed header */
+    body{
+        padding-top:90px;
+    }
+
   .nav{
     position:fixed;
     top:0;
